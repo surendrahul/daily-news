@@ -1,0 +1,61 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" namespace = "/" extends="struts-default">
+		
+		<action name="index"   class="news.index">
+			<result name="success">welcome.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		<action name="login" class="news.login">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		<action name="logout" class="news.logout">
+			<result name="success">index.jsp</result>
+			<!-- <result name="error">error.jsp</result> -->
+		</action>
+		
+		<action name="signUp" class="news.signUp">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		<action name="addNews" class="news.addNews">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		<action name="likeNews" class="news.likeNews">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		<action name="unlikeNews" class="news.unlikeNews">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		
+		<action name="commentsNew" class="news.commentsNew">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		<action name="replyOfComments" class="news.replyOfComments">
+			<result name="success">index.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+	 
+		<action name="seeComments" class="news.seeComments">
+			<result name="success">newWelcome.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>

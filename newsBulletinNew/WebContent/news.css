@@ -1,0 +1,411 @@
+@charset "UTF-8";
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+header{
+	background-color: rgb(78, 216, 198);
+	border-bottom:3px solid #ef1515;
+	height:80px;
+	position:fixed;
+	top:0px;
+	width:100%;
+	z-index:10;
+}
+
+#logoutForm{
+	//display:inline;
+	//display: inline;
+}
+#news{
+	color: #e01717;
+    position: relative;
+    cursor: pointer;
+    top: -10%;
+    font-size: 25px;
+    left: 4%;
+}
+#icon1{
+	height: 70%;
+    position: relative;
+    top: 15%;
+    left: 3%;
+    
+}
+.welcomSpan{
+	float: right;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+#addNewsButton{
+	float: right;
+    color:rgb(39, 88, 82);
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 0.1%;
+    background-color:white;
+    outline:none;
+    border:none;
+    padding:8px;
+    font-size:18px;
+    border-radius:7px;
+    transition:all 0.5s;
+}
+
+#addNewsButton:hover{
+ border-bottom:3px solid red;
+ //box-shadow:0px 8px 8px #988f8f
+}
+.section1{
+    position: relative;
+    top: 90px;
+}
+table{
+    width: 80%;
+    margin: 26px 10%;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 12px #e892a0;
+    transition: all 0.5s;
+}
+table:hover{
+	transform:translateY(-4px);
+}
+tbody{
+	border: 5px solid #80828061;
+    outline: 7px solid #f6f6f6;
+    border-left: 10px solid #5ad8c6;
+}
+.td1{
+	padding: 5px 30px;
+    border: 3px solid #f6f6f6;
+    background-color: #f6f6f6;
+}
+.newsTitle{
+	font-size:24px;
+}
+.user, .updateDate{
+ 	font-size:14px;
+}
+.td2{
+	border:3px solid  #cccccc2b;
+	padding:10px 10%;
+	font-size:18px;
+	word-spacing: 12px;
+	color: #3c3a3a;
+}
+.td3{
+	border: 3px solid  #cccccc2b;
+    padding: 25px;
+    background-color: #cccccc2b;
+
+}
+ .td3 span form{
+ 	display:inline-block;
+	cursor:pointer;
+} 
+.td3 span{
+	 padding:10px 30px;
+	background-color: #e8e8e8;
+    margin: -7px 10px;
+    border-radius:7px;
+    cursor:pointer;
+    font-size:16px;
+    transition: all 0.6s;
+}
+.td3 span:hover{
+	//border:1px solid blue;
+	//transform:translateY(15px);
+	box-shadow:0px 5px 5px #988f8f;
+	//transform:scale(1.2);
+}
+.td3 span form input{
+	outline:none;
+	border:none;
+	background-color:#e8e8e8;
+	font-size:16px;
+	cursor:pointer;
+}
+
+/* add news section; */
+.addNewsSection{
+    width: 100%;
+    height:100vh;
+    position: fixed;
+    top: 0vh;
+    left: 0;
+    background-color: rgba(0,0,0, 0.6);	
+    display:none;
+}
+.loginSection {
+	height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid;
+    //z-index: 4;
+    background-color: rgba(0,0,0,0.6);
+    display:none;
+}
+.signUpSection{
+	height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid;
+    //z-index: 4;
+    background-color: rgba(0,0,0,0.6);
+    display:none;
+}
+.commentsSection{
+	height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid;
+    //z-index: 4;
+    background-color: rgba(0,0,0,0.6);
+    display:none;
+}
+.addNewsForm{
+   width: 60%;
+    position: absolute;
+    top: 30vh;
+    left: 20%;
+    background-color: #5ad8c6;
+    border-radius: 14px;	
+}
+.loginForm{
+	width: 30%;
+    position: absolute;
+    top: 30vh;
+    left: 35%;
+    background-color: #5ad8c6;
+    padding: 1%;
+    border-radius:10px;
+}
+.signUpForm{
+	width: 40%;
+    position: absolute;
+    top: 30vh;
+    left: 30%;
+    background-color: #5ad8c6;
+    padding: 1%;
+    border-radius:10px;
+}
+.commentsForm{
+	width: 50%;
+    position: absolute;
+    top: 30vh;
+    left: 25%;
+    background-color: #5ad8c6;
+    border-radius: 14px;
+}
+.addNewsSection input, textarea{
+	width: 80%;
+    margin: 1.2%;
+    padding: 2%;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid #f04138;
+    background-color: #a8fdf1;
+    border-radius: 10px;
+}
+.loginForm input, .signUpForm input{
+	width:70%;
+	padding:2%;
+	text-align:center;
+	margin:1%;
+	font-size:18px;
+	outline:none;
+	border:none;
+	border-bottom: 3px solid #f04138;
+    background-color: #a8fdf1;
+    border-radius:7px;
+}
+#finalAddNews, .finalAddComments, .finalReplyComments{
+    width: 20%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #25b3a1;
+    cursor: pointer;
+    background-color: #a8fdf1;
+}
+#loginButton, #submitNewAccount{
+	 width: 25%;
+    border-radius: 16px;
+    cursor: pointer;
+}
+#newAccountButton{
+	position: fixed;
+    top: 32vh;
+    left: 45%;
+    outline: none;
+    border: none;
+    background-color: #5ad8c6;
+    color: blue;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+	}
+#cancleNewsAdd{
+	position: fixed;
+    top: 29vh;
+    right: 19%;
+    width: 45px;
+    font-size: 26px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 2px solid red;
+    color: black;
+    z-index: 3;
+    cursor: pointer;
+    background-color:white;
+}
+#cancleNewsAdd:hover,#cancleLogginButton:hover, #cancleSignUpButton:hover, #cancleComments:hover, ##cancleReply:hover{
+	color:red;
+}
+#cancleLogginButton{
+	z-index: 3;
+    position: fixed;
+    top: 31vh;
+    right: 33%;
+    padding: 7px;
+    border-radius: 50%;
+    width: 36px;
+    font-size: 16px;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color:white;
+}
+#cancleSignUpButton{
+	z-index: 3;
+    position: fixed;
+    top: 31vh;
+    right: 29%;
+    padding: 7px;
+    border-radius: 50%;
+    width: 36px;
+    font-size: 16px;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color:white;
+}
+#cancleComments{
+	z-index: 3;
+    position: fixed;
+    top: 31vh;
+    right: 25%;
+    padding: 7px;
+    border-radius: 50%;
+    width: 36px;
+    font-size: 16px;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color:white;
+}
+.allComments{
+	padding: 4px 3%;
+    background-color: #f6f6f65e;
+    color: #988f8f;
+    //display:none;
+}
+.allCommentsHeader{
+	padding: 4px 3%;
+    background-color: #f6f6f65e;
+    color: #988f8f;
+}
+.seeCommentsButton{
+	padding: 0px 20px;
+    margin: 0px 10px;
+    border: 1px solid;
+    background-color: #a8fdf1;
+    border-radius: 6px;
+    cursor: pointer;
+    color: red;
+}
+.replyButton{
+	background-color: #e8e8e8;
+    color: #747575;
+    border-radius: 7px;
+    padding: 0 3px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 12px;
+    transition:all 0.5s;
+}
+.replyButton:hover{
+	box-shadow:0px 4px 4px #988f8f;
+}
+.replySection{
+	height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid;
+    //z-index: 4;
+    background-color: rgba(0,0,0,0.6);
+    display:none;
+}
+.replyForm{
+	width: 50%;
+    position: absolute;
+    top: 30vh;
+    left: 25%;
+    background-color: #5ad8c6;
+    border-radius: 14px;
+}
+#cancleReply{
+	z-index: 3;
+    position: fixed;
+    top: 31vh;
+    right: 25%;
+    padding: 7px;
+    border-radius: 50%;
+    width: 36px;
+    font-size: 16px;
+    border: 2px solid red;
+    cursor: pointer;
+    background-color:white;
+}
+.seeReplyButton{
+	background-color: #a7f9f0;
+    color: #f90808;
+    border-radius: 7px;
+    padding: 0 11px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.allReply{
+	padding: 4px 3%;
+    background-color: #f6f6f65e;
+    color: #988f8f;
+    //display:none;
+    padding-left:7%;
+}
+
+
+
+
+
+
+
+
+
